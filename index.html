@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<style>
+    body{
+        font-family: 'Montserrat', sans-serif;
+    }
+        #element1 {
+        display: inline-block;
+        
+        width: 50%;
+        
+      }
+      
+      #elementx {
+        display: inline-block;
+        width: 48%;
+        text-align: right;
+        color: rgb(0, 0, 0);
+        font-weight: bolder;
+        text-decoration: none;
+      }
+      #headingOne{
+          background: rgba(209, 236, 255, 0.5);
+          padding: 10px;
+          margin: 1px;
+          
+      }
+      #collapseOne{
+          padding: 10px;
+          background: rgba(0, 0, 0, 0.005);
+      }
+     
+      #headingTwo{
+          background: rgb(209, 236, 255,0.5);
+          padding: 10px;
+          margin: 1px;
+      }
+      #collapseTwo{
+          padding: 10px;
+          background: rgba(0, 0, 0, 0.005);
+      }
+      #headingThree{
+          background: rgb(209, 236, 255);
+          padding: 10px;
+          margin: 1px;
+      }
+      #collapseThree{
+          padding: 10px;
+          background: rgba(0, 0, 0, 0.005);
+      }
+      #accordion{
+          width: 100%;
+      }
+      i{
+          color: rgb(61, 120, 143);
+      }
+      #line{
+          width: 200px;
+          height: 50px;
+          background: #000;
+      }
+      #pack{
+       width: 45%;background: rgba(209, 236, 255, 0.5);
+      }
+      #course{
+       width: 100%;
+      }
+</style>
+<title>Document</title>
+<script>
+    $('#plus').on('click', () => {
+  $('#plus').text('I am working!')
+})
+</script>
+    <script>
+        $(document).click(function(e) {
+	if (!$(e.target).is('.panel-body')) {
+    	$('.collapse').collapse('hide');	    
+    }
+});
+    </script>
+</head>
+<body>
+    <div class="container mt-5">
+        <p>Package Contains</p>
+        <div class="row  m-1 p-2" id="pack" >
+            <div class="col-md-3"><i class="fa fa-play-circle" aria-hidden="true"></i> videos</div>
+            <div class="col-md-1">|</div>
+            <div class="col-md-3"><i class="fa fa-book" aria-hidden="true"></i> e-books</div>
+            <div class="col-md-1">|</div>
+            <div class="col-md-3"><i class="fa fa-align-left" aria-hidden="true"></i> Tests</div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5">
+        
+        <div class="row  m-1 p-2" id="course" >
+            <div class="col-md-6">
+            <div>
+
+               <h4> Course Advantages</h4>
+            </div>
+            <div class="mt-2" style="width: 20%;height: 3px;background: rgb(255, 0, 0);"></div>
+            <div class="row mt-2">
+                <div class="col-md-1"><i class="fa fa-check" aria-hidden="true"></i></div>
+                <div class="col-md-11">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, id placeat cum at ut quis!</div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-1"><i class="fa fa-check" aria-hidden="true"></i></div>
+                <div class="col-md-11">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, id placeat cum at ut quis!</div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-1"><i class="fa fa-check" aria-hidden="true"></i></div>
+                <div class="col-md-11">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, id placeat cum at ut quis!</div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-1"><i class="fa fa-check" aria-hidden="true"></i></div>
+                <div class="col-md-11">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, id placeat cum at ut quis!</div>
+            </div>
+            </div>
+
+            <div class="col-md-6">
+            <div>
+
+                <h4>Course Features</h4>
+            </div>
+            <div class="mt-2" style="width: 20%;height: 3px;background: rgb(255, 0, 0);"></div>
+            <div class="row mt-2">
+                <div class="col-md-1"><i class="fa fa-check" aria-hidden="true"></i></div>
+                <div class="col-md-11">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, id placeat cum at ut quis!</div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-1"><i class="fa fa-check" aria-hidden="true"></i></div>
+                <div class="col-md-11">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, id placeat cum at ut quis!</div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-1"><i class="fa fa-check" aria-hidden="true"></i></div>
+                <div class="col-md-11">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, id placeat cum at ut quis!</div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-1"><i class="fa fa-check" aria-hidden="true"></i></div>
+                <div class="col-md-11">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, id placeat cum at ut quis!</div>
+            </div>
+
+            </div>
+            
+            
+            
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-default mt-5 mb-5">      
+        <div class="container">
+            <p>What you'll cover in this course</p>
+            <hr>
+              
+           <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <div id="element1">11 : Physics</div>
+                    
+                  <a  id="elementx" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    +
+                </a>
+                
+
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                    <div id="element1">Physical World Units and Measurements</div>
+                    <a href="">
+
+                        <div id="elementx"><i class="fa fa-lock" aria-hidden="true"></i> Locked</div>
+                    </a>
+                </div>
+                <hr>
+                <div class="panel-body">
+                    <div id="element1">Motion in a Straight Line</div>
+                    <a href="">
+
+                        <div id="elementx"><i class="fa fa-lock" aria-hidden="true"></i> Locked</div>
+                    </a>
+                </div>
+                <hr>
+                <div class="panel-body">
+                    <div id="element1">Motion in a Plane</div>
+                    <a href="">
+
+                        <div id="elementx"><i class="fa fa-lock" aria-hidden="true"></i> Locked</div>
+                    </a>
+                </div>
+                <hr>
+                <div class="panel-body">
+                    <div id="element1">Laws of motion</div>
+                    <a href="">
+
+                        <div id="elementx"><i class="fa fa-lock" aria-hidden="true"></i> Locked</div>
+                    </a>
+                </div>
+                <hr>
+                <div class="panel-body">
+                    <div id="element1">Work energy and power</div>
+                    <a href="">
+
+                        <div id="elementx"><i class="fa fa-lock" aria-hidden="true"></i> Locked</div>
+                    </a>
+                </div>
+                <hr>
+                <div class="panel-body">
+                    <div id="element1">System of Particles and Rotational Motion</div>
+                    <a href="">
+
+                        <div id="elementx"><i class="fa fa-lock" aria-hidden="true"></i> Locked</div>
+                    </a>
+                </div>
+                <hr>
+                <div class="panel-body">
+                    <div id="element1">Gravitation</div>
+                    <a href="">
+
+                        <div id="elementx"><i class="fa fa-lock" aria-hidden="true"></i> Locked</div>
+                    </a>
+                </div>
+                <hr>
+                <div class="panel-body">
+                    <div id="element1">Mechanical Properties of Solids</div>
+                    <a href="">
+
+                        <div id="elementx"><i class="fa fa-lock" aria-hidden="true"></i> Locked</div>
+                    </a>
+                </div>
+                <hr>
+                <div class="panel-body">
+                    <div id="element1">Mechanical Properties of Fluids</div>
+                    <a href="">
+
+                        <div id="elementx"><i class="fa fa-lock" aria-hidden="true"></i> Locked</div>
+                    </a>
+                </div>
+                <hr>
+                <div class="panel-body">
+                    <div id="element1">THERMAL PROPERTIES OF MATTER</div>
+                    <a href="">
+
+                        <div id="elementx"><i class="fa fa-lock" aria-hidden="true"></i> Locked</div>
+                    </a>
+                </div>
+                <hr>
+                <div class="panel-body">
+                    <div id="element1">THEMODYNAMICS</div>
+                    <a href="">
+
+                        <div id="elementx"><i class="fa fa-lock" aria-hidden="true"></i> Locked</div>
+                    </a>
+                </div>
+                <hr>
+                <div class="panel-body">
+                    <div id="element1">KINETIC THEORY OF GASES</div>
+                    <a href="">
+
+                        <div id="elementx"><i class="fa fa-lock" aria-hidden="true"></i> Locked</div>
+                    </a>
+                </div>
+                <hr>
+                <div class="panel-body">
+                    <div id="element1">OSCILLATIONS</div>
+                    <a href="">
+
+                        <div id="elementx"><i class="fa fa-lock" aria-hidden="true"></i> Locked</div>
+                    </a>
+                </div>
+                <hr>
+                <div class="panel-body">
+                    <div id="element1">WAVES</div>
+                    <a href="">
+
+                        <div id="elementx"><i class="fa fa-lock" aria-hidden="true"></i> Locked</div>
+                    </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                    <div id="element1">11 : Chemistry</div>
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div id="elementx">+</div>
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                    <div id="element1">Some Basic concept in Chemistry</div>
+                    <a href="">
+
+                        <div id="elementx"><i class="fa fa-lock" aria-hidden="true"></i> Locked</div>
+                    </a>
+                </div>
+                <hr>
+                <div class="panel-body">
+                    <div id="element1">Structure of Atom</div>
+                    <a href="">
+
+                        <div id="elementx"><i class="fa fa-lock" aria-hidden="true"></i> Locked</div>
+                    </a>
+                </div>
+                <hr>
+                <div class="panel-body">
+                    <div id="element1">Periodic Properties</div>
+                    <a href="">
+
+                        <div id="elementx"><i class="fa fa-lock" aria-hidden="true"></i> Locked</div>
+                    </a>
+                </div>
+                <hr>
+                <div class="panel-body">
+                    <div id="element1">Chemical bonding and moleculer structure</div>
+                    <a href="">
+
+                        <div id="elementx"><i class="fa fa-lock" aria-hidden="true"></i> Locked</div>
+                    </a>
+                </div>
+                <hr>
+                <div class="panel-body">
+                    <div id="element1">States of Matter</div>
+                    <a href="">
+
+                        <div id="elementx"><i class="fa fa-lock" aria-hidden="true"></i> Locked</div>
+                    </a>
+                </div>
+                <hr>
+                <div class="panel-body">
+                    <div id="element1">Thermodynamics</div>
+                    <a href="">
+
+                        <div id="elementx"><i class="fa fa-lock" aria-hidden="true"></i> Locked</div>
+                    </a>
+                </div>
+                <hr>
+                <div class="panel-body">
+                    <div id="element1">Equilibrium</div>
+                    <a href="">
+
+                        <div id="elementx"><i class="fa fa-lock" aria-hidden="true"></i> Locked</div>
+                    </a>
+                </div>
+                <hr>
+                <div class="panel-body">
+                    <div id="element1">Redox Reactions and Volumetric Analysis</div>
+                    <a href="">
+
+                        <div id="elementx"><i class="fa fa-lock" aria-hidden="true"></i> Locked</div>
+                    </a>
+                </div>
+                <hr>
+                <div class="panel-body">
+                    <div id="element1">Hydrogen</div>
+                    <a href="">
+
+                        <div id="elementx"><i class="fa fa-lock" aria-hidden="true"></i> Locked</div>
+                    </a>
+                </div>
+                <hr>
+                <div class="panel-body">
+                    <div id="element1">s block element</div>
+                    <a href="">
+
+                        <div id="elementx"><i class="fa fa-lock" aria-hidden="true"></i> Locked</div>
+                    </a>
+                </div>
+                <hr>
+                <div class="panel-body">
+                    <div id="element1">Some p block elements</div>
+                    <a href="">
+
+                        <div id="elementx"><i class="fa fa-lock" aria-hidden="true"></i> Locked</div>
+                    </a>
+                </div>
+                <hr>
+                <div class="panel-body">
+                    <div id="element1">Organic Chemistry Some Basic Principle and Techniques</div>
+                    <a href="">
+
+                        <div id="elementx"><i class="fa fa-lock" aria-hidden="true"></i> Locked</div>
+                    </a>
+                </div>
+                <hr>
+                <div class="panel-body">
+                    <div id="element1">Hydrocarbon</div>
+                    <a href="">
+
+                        <div id="elementx"><i class="fa fa-lock" aria-hidden="true"></i> Locked</div>
+                    </a>
+                </div>
+                <hr>
+                <div class="panel-body">
+                    <div id="element1">Environmental Chemistry</div>
+                    <a href="">
+
+                        <div id="elementx"><i class="fa fa-lock" aria-hidden="true"></i> Locked</div>
+                    </a>
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <script>
+        $(".deba").click(function() {
+  
+  var lable = $(".deba").text().trim();
+
+  if(lable == "Hide") {
+    $(".deba").text("-");
+    $(".myText").hide();
+  }
+  else {
+    $(".deba").text("+");
+    $(".myText").show();
+  }
+   
+ });
+    </script>
+</body>
+</html>
